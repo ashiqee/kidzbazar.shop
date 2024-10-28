@@ -36,7 +36,7 @@ export default function HomepageSlider() {
         { siteConfig.bannerImg.map((img,i)=>(
             <SwiperSlide key={i}>
 
-            <Image alt='KidzBazar Banner' className='w-full max-h-[600px] object-cover' 
+            <Image alt='KidzBazar Banner' className='w-full md:max-h-[400px] 2xl:max-h-[600px] object-cover' 
             height={200} src={img.imgUrl} width={1000}/>
             </SwiperSlide>
 

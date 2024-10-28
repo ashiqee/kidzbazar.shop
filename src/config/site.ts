@@ -69,13 +69,13 @@ export const siteConfig = {
 
   bannerImg: [
     {
-      imgUrl:"https://i.pinimg.com/originals/72/0c/74/720c7457a6af70a649613d4b7b549994.png"
+      imgUrl:"https://htmldemo.net/kidol/kidol/assets/img/slider/3.jpg"
   },
     {
       imgUrl:"https://i.pinimg.com/originals/72/0c/74/720c7457a6af70a649613d4b7b549994.png"
   },
     {
-      imgUrl:"https://i.pinimg.com/originals/72/0c/74/720c7457a6af70a649613d4b7b549994.png"
+      imgUrl:"https://htmldemo.net/kidol/kidol/assets/img/slider/3.jpg"
   },
     {
       imgUrl:"https://i.pinimg.com/originals/72/0c/74/720c7457a6af70a649613d4b7b549994.png"

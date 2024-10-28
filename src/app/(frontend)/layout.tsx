@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 
 import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
+import MainMenu from "@/components/shared/MainMenu";
 
 
 
@@ -11,9 +12,12 @@ export default function FrontendLayout({
   children: React.ReactNode;
 }) {
   return (
- <>
- <Navbar/>
- {children}
+ <div className="flex flex-col justify-between min-h-screen">
+<main>
+<Navbar/>
+<MainMenu/>
+{children}
+</main>
  <footer className="w-full flex items-center justify-center py-3">
               <Link
                 isExternal
@@ -25,6 +29,6 @@ export default function FrontendLayout({
                 <p className="text-primary">NextUI</p>
               </Link>
             </footer>
- </>
+ </div>
   );
 }
