@@ -1,15 +1,15 @@
-import { Link } from "@nextui-org/link";
-import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code";
-import { button as buttonStyles } from "@nextui-org/theme";
 
-import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
+import FeaturedSection from "@/components/(pagesection)/Homepages/FeaturedSection";
 import HomepageSlider from "@/components/ui/Slider/HomepageSlider";
-import FeaturedSection from "./(pagesection)/Homepages/FeaturedSection";
+import { getAllProducts } from "@/services/getProductsApiFetch";
 
-export default function Home() {
+
+
+export default async function Home() {
+
+  const products = await getAllProducts();
+
+
   return (
     <>
     
@@ -18,7 +18,7 @@ export default function Home() {
 
     </section>
     <section className=" md:px-6">
-      <FeaturedSection/>
+<FeaturedSection products={products}/>
     </section>
     </>
   );
