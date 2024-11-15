@@ -21,7 +21,7 @@ export default async function ShopPage() {
     <div className="gap-3 md:gap-4 grid grid-cols-2 sm:grid-cols-4 mx-4 md:mx-0">
     {posts.products.map((item:any, index:number) => (
      
-      <ProductCard item={item} index={index} />
+      <ProductCard key={index} item={item} index={index} />
 
     ))}
     </div>

@@ -1,12 +1,18 @@
-import ProductCard from '@/components/ui/cards/ProductCard';
 import React from 'react';
+import ProductDetails from './ProductDetails';
 
-const ProductDetails = () => {
+const ProductDestailsPage = async ({params}:{params:any}) => {
+   
+    
+  const  data = await fetch('https://dummyjson.com/products')
+  const  posts = await data.json()
+    
+
     return (
-        <div className='mx-8'>
-           product details
+        <div>
+            <ProductDetails product={posts.products[params.productId]}/>
         </div>
     );
 };
 
-export default ProductDetails;
+export default ProductDestailsPage;
